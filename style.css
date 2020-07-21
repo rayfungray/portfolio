@@ -15,7 +15,7 @@
     /* The image used */
     background-image: url("./asset/hongkong.jpg");
 
-    background-size:150vh;
+    background-size:100%;
 
     /* Set a specific height */
     height: 50vh;
