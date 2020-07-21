@@ -1,0 +1,62 @@
+.parallax-first{
+    /* The image used */
+    background-image: url("./asset/background.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.parallax-second{
+    /* The image used */
+    background-image: url("./asset/hongkong.jpg");
+
+    background-size:150vh;
+
+    /* Set a specific height */
+    height: 50vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat; 
+}
+
+.text-holder{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    flex-direction: column;
+}
+
+.top{
+    font-size: 35px;
+}
+
+.divider{
+    height: 25vh;
+    background-color: #eeeeee;
+}
+
+.fly-in{
+    animation: test 0.5s linear;    
+}
+
+@keyframes test {
+    0%   { 
+    transform: translateX(200%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+   }
+
+*{
+    font-family: Monospace;
+}
