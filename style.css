@@ -48,6 +48,23 @@
     animation: test 0.5s linear;    
 }
 
+.trans-button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    border: 2px solid white;
+    color: white;
+    font-size: 40px;
+}
+
+.trans-button:hover{
+    color: black;
+}
+
+
+
 @keyframes test {
     0%   { 
     transform: translateX(1000%); 		
