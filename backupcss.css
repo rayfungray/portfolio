@@ -1,0 +1,98 @@
+
+.parallax-first{
+    /* The image used */
+    background-image: url("./asset/dark-hk.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+
+    display:grid;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.top-left{
+    display:flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+
+.navigation {
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: space-between;
+    margin: 18px;
+  }
+.parallax-second{
+    /* The image used */
+    background-image: url("./asset/hongkong.jpg");
+
+    background-size:100%;
+
+    /* Set a specific height */
+    height: 50vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.text-holder{
+    min-height: 10vh;
+    display: flex;
+    justify-self: center;
+    font-size: 35px;
+    flex-direction: column;
+}
+
+.top{
+    font-size: 35px;
+}
+
+.divider{
+    height: 25vh;
+    background-color: #eeeeee;
+}
+
+.fly-in{
+    align-self: center;
+    display: flex;
+
+    animation: rotateIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.trans-button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    border: 2px solid white;
+    color: white;
+    font-size: 40px;
+}
+
+.trans-button:hover{
+    color: black;
+}
+
+
+
+@keyframes test {
+    0%   { 
+    transform: translateX(1000%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+   }
+

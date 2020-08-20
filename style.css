@@ -1,98 +1,43 @@
-.parallax-first{
-    /* The image used */
-    background-image: url("./asset/dark-hk.jpg");
-
-    /* Set a specific height */
-    height: 100vh;
-
-    display:grid;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;   
 }
 
-.top-left{
-    display:flex;
-    align-self: flex-start;
-    justify-content: flex-start;
+/*---nav---*/
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:white;
 }
 
-.navigation {
-    color: white;
-    display: flex;
-    flex-flow: row wrap;
-    /* This aligns items to the end line on main-axis */
-    justify-content: space-between;
-    margin: 18px;
-  }
-.parallax-second{
-    /* The image used */
-    background-image: url("./asset/hongkong.jpg");
-
-    background-size:100%;
-
-    /* Set a specific height */
-    height: 50vh;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat; 
-    background-size: cover;
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6)!important;
 }
 
-.text-holder{
-    min-height: 10vh;
-    display: flex;
-    justify-self: center;
-    font-size: 35px;
-    flex-direction: column;
+.navbar-nav li{
+    padding-right: .7rem;
 }
 
-.top{
-    font-size: 35px;
-}
-
-.divider{
-    height: 25vh;
-    background-color: #eeeeee;
-}
-
-.fly-in{
-    align-self: center;
-    display: flex;
-    animation: test 0.5s linear;    
-}
-
-.trans-button{
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    border: 2px solid white;
-    color: white;
-    font-size: 40px;
-}
-
-.trans-button:hover{
-    color: black;
+.navbar-dark .navbar-nav .nav-link{
+    color:gray;
+    padding-top: .8rem;
 }
 
 
-
-@keyframes test {
-    0%   { 
-    transform: translateX(1000%); 		
-    }
-    100% { 
-    transform: translateX(0%); 
-    }
-   }
-
-*{
-    font-family: Monospace;
+.home-inner{
+    background-image: url(/asset/dark-hk.jpg);
 }
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top:48%;
+    z-index:1;
+}
+
