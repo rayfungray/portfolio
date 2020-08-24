@@ -18,7 +18,7 @@
         <!--Landing--> 
         <div id="home">
             <div class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand" href="#"><img src="#">RAY FUNG</a>
+                <a class="navbar-brand" href="#home">RAY FUNG</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,33 +41,140 @@
                 </div>                         
             </div>
             
-            <div class="landing">
+            <div class="landing" >
                 <div class="home-wrap">
-                    <div class="home-inner">
+                    <div class="home-inner" id="particles-js">
                     </div>
                 </div>>
             </div>
 
             <div class="caption text-center">
-                <h1 style="color:white">Hello, I'm Ray Fung. I'm a front-end developer</h1>
-                <button class="btn btn-outline-light btn-lg" href="#portfolio">View My Work</button>
+                <h1 style="color:white;margin-bottom:20px">Hello, I'm Ray Fung. I'm a front-end developer</h1>
+                <a class="btn btn-outline-light btn-lg" href="#portfolio">View My Work</a>
             </div> 
         </div>
         <!--About Me--> 
-        <div id="about" class="offset">
+        <div id="about" class="offset jumbotron">
+            <div class="text-center">
+                <h2 class="heading"><u>ABOUT</u></h2>
+            </div>
             
+            <div class="container-fluid text-center">
+                
+                <div class="row justify-content-center align-items-center">
+                    <div class="card justify-content-center align-content-center">
+                        <div class="card-title">
+                            <i class="fas fa-plane fa-5x animate__animated animate__shakeY animate__infinite animate__slow"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">About Me</h5>
+                          <p class="card-text">I was born and raised in Hong Kong,
+                            moved to Utah in 2009 and stayed ever since.</p>
+                        </div>
+                    </div>
+                    <div class="card justify-content-center align-content-center">
+                        <div class="card-title">
+                            <i class="fas fa-atom fa-5x animate__animated animate__heartBeat animate__infinite"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Skill</h5>
+                          <p class="card-text">I stay up to date with the latest Javascript Technologies. This includes things like Javscript frameworks and tools to build amazing websites.</p>
+                        </div>
+                    </div>
+                    <div class="card justify-content-center align-content-center">
+                        <div class="card-title">
+                            <i class="fas fa-code fa-5x animate__animated animate__pulse animate__infinite"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Design</h5>
+                          <p class="card-text">All my websites are completely responsive and work with any screen size. I make sure that my websites are accessible to all! Also have extensive experience in Adobe Creative Suites.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                  
+            </div>
+
         </div>
         <!--portfolio--> 
         <div id="portfolio" class="offset">
+            <div class="container-fluid text-center justify-content-center">   
+                    <div class="col-12">                    
+                        <h2 class="heading"><u>PORTFOLIO</u></h2> 
+                </div>                
+                <div class="row justify-content-center">
+                    <div class="card redesign">
+                        <div class="img-card redesign" >                            
+                        </div>
+                        <span class="status">Before</span>
+                        <div class="card-body">
+                            <div class="card-title">Problem: Outdated Website and Complicated Order Process <br>
+                                Solution: I helped redesigned the homepage and simplified the phone case design process</div>
+                            <div class="card-text">
+                                <a class="btn btn-outline-info" href="https://popesfineleathergoods.com/test/">Visit website</a>
+                            </div>
+                        </div>
+                    </div>                                            
+                </div>
+
+                <div class="col-12 branding">
+                    <h2 class="heading"><u>BRANDS I'VE WORKED WITH</u></h2>
+                </div>
+                <div class="row ">                    
+                    <div class="col brand">
+                        <a  target="_blank" href="https://www.americanblanketcompany.com/"> <img  src="https://upgradedreviews.s3.amazonaws.com/images/coupons/logos/american-blanket-company.png?fbclid=IwAR0qbgcbK4XXEGtlEuqQ-kneP16lWWoxqPfL41B1H_N9gvIkU-q5P4yl5Tw"></a>
+                    </div>
+                    <div class="col brand">                        
+                       <a   target="_blank" href="https://www.brodychemical.com/"><img  src="https://www.brodychemical.com/wp-content/themes/brody/assets/images/logo.png"></a> 
+                    </div>
+                    <div class="col brand">                        
+                        <a  target="_blank" href="https://www.novisecurity.com/"><img  src="https://www.novisecurity.com/wp-content/uploads/c9b22127-novi_logo-1-150x79.png"></a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!--end portfolio--> 
+
+        <div id="contact" class="offset jumbotron">
+            <div class="col-12 text-center">
+                <h2 class="heading"><u>CONTACT ME</u></h2>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="form-container">
+                    <form method="post" name="form" action="action_page.php">
+                      <label for="fname">Name</label>
+                      <input type="text" id="fname" name="name" placeholder="Your name..">
+                  
+                      <label for="lname">Email</label>
+                      <input type="text" id="lname" name="email" placeholder="Email">           
+                      
+                  
+                      <label for="subject">Message</label>
+                      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Send Form">
+                    </form>
+                  </div>
+            </div>
             
         </div>
 
-        <div id="contact" class="offset">
-                  
+        <div id="footer">
+            <div class="footing">
+                © Ray Fung 2020
+                <div class="link">
+                    <a class="btn-outline-info" href="https://www.linkedin.com/in/ray-fung-41a9a389/"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+            
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/bf12b2bd15.js" crossorigin="anonymous"></script>
+        <script src="particles.min.js"></script>
+        <script src="stats.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
