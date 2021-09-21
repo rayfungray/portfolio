@@ -5,6 +5,13 @@ body{
     margin:0;
 }
 
+#resume{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2%;
+}
+
 html {
     scroll-behavior: smooth;
    }
