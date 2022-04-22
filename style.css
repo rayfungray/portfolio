@@ -156,6 +156,9 @@ canvas {
 .brand{
     margin: 3vh;
 }
+.brand img{
+    height: 300px;
+}
 .brand-cont{
     width: 20%;
     height: 20%;
